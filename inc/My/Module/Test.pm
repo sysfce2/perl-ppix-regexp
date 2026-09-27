@@ -262,7 +262,7 @@ sub invocant {
 	    and @{ $args[-1] } == 0
 	    and $array{$args[-2]}
 	    and $scalar = 0;
-	my @nav = ();
+	my @nav;
 	while ( @args ) {
 	    if ( __instance( $args[0], 'PPIx::Regexp::Element' ) ) {
 		$obj = shift @args;
